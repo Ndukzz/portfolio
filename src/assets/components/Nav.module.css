@@ -1,0 +1,38 @@
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0px 8px 0px;
+  align-items: center;
+}
+
+/* .nav-bar > h1 {
+  
+} */
+
+.nav-bar > .nav-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  list-style-type: none;
+}
+
+.nav-list > li {
+  color:  #ABB2BF;
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: default;
+}
+
+.nav-list  :hover {
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+  color: white;
+}
+
+.nav-list > li > span {
+  color: #C778DD
+} 
