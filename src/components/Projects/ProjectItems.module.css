@@ -1,0 +1,46 @@
+.projectItems {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projectItem {
+  border: 1px solid #ABB2BF;
+  margin: 20px 0px;
+}
+
+.projectImg {
+  height: 201px;
+  width: 330px;
+  border-bottom: 1px solid #ABB2BF;
+}
+
+.tools {
+  color: var(--gray, #ABB2BF);
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px;
+  border-bottom: 1px solid #ABB2BF;
+}
+
+.projectTitle {
+  color: var(--white, #FFF);
+  font-family: Fira Code;
+  font-size: 24px;
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.descriptionBox {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}

@@ -1,0 +1,37 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0px
+}
+
+.text {
+  width: 537px;
+}
+
+.text > p {
+  margin: 25px 0px
+}
+
+.text > h2 {
+  color: white;
+  font-family: Fira Code;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.text > h2 > span {
+  color: #C778DD;
+}
+
+.textBox {
+  border: 1px solid white;
+  padding: 2px
+}
+
+.profilePic {
+  width: 457px; 
+  height: 386px;
+  flex-shrink: 0;
+}

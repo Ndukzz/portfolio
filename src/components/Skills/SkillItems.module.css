@@ -1,0 +1,14 @@
+.skillContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillIcons {
+  width: 349px;
+  height: 282px;
+  background-color: purple
+}
+
+.skillModules {
+  width: 584px;
+}

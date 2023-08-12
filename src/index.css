@@ -12,9 +12,42 @@
   --white: #FFFFFF,
 }
 
-a {
+.section {
+  padding: 30px 0px;
+  width: 100%
+}
+
+.titles {
+  color: var(--white, #FFF);
+  font-family: Fira Code;
+  font-size: 32px;
+  font-style: normal;
   font-weight: 500;
-  color: #646cff;
+  line-height: normal;
+}
+
+.titleNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0px
+}
+
+.titleNav a {
+  text-decoration: none;
+  color: white
+}
+
+.line {
+  height: 1px;
+  width: 40%; 
+  background-color: #C778DD;
+  padding: 0px 100px 0px 40px
+}
+
+span {
+  color: #C778DD;
   text-decoration: inherit;
 }
 
@@ -29,14 +62,14 @@ h1 {
   line-height: 1.1;
 }
 
-.button {
+.purpleButton {
   border: 1px solid #C778DD;
   padding: 8px 16px;
   background-color: rgba(199,120 ,221, 0);
   transition: background-color 0.3s ease-in-out;
 }
 
-.button:hover{
+.purpleButton:hover{
   background-color: rgba(199,120 ,221, 0.5);
 }
 /* Create a button for the site */
