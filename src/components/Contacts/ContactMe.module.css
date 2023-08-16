@@ -1,0 +1,39 @@
+.content {
+  display: flex;
+  justify-content: space-between
+  /* padding: 5px */
+}
+
+.outro {
+  width: 505px;
+  color: var(--gray, #ABB2BF);
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.box {
+  border: 1px solid var(--gray, #ABB2BF);
+}
+
+.message {
+  color: var(--white, #FFF);
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 10px
+}
+
+.contacts {
+  padding: 10px;
+  color: var(--gray, #ABB2BF);
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

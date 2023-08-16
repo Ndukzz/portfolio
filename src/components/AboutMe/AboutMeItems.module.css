@@ -1,0 +1,18 @@
+.bio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bioText {
+  color: var(--gray, #ABB2BF);
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.bioText > p {
+  margin: 30px 0px
+}

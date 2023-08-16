@@ -1,0 +1,36 @@
+.mediaList {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+
+}
+
+.flex > * {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.media > p {
+  color: var(--white, #FFF);
+  font-family: Fira Code;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.media > ul {
+  display: flex;
+  list-style-type: none;
+}
+.media > ul > li {
+  margin: 5px
+}

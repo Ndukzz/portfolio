@@ -17,6 +17,10 @@
   width: 100%
 }
 
+.container {
+  padding: 0px 171px;
+}
+
 .titles {
   color: var(--white, #FFF);
   font-family: Fira Code;
@@ -63,6 +67,7 @@ h1 {
 }
 
 .purpleButton {
+  font-family: Fira Code;
   border: 1px solid #C778DD;
   padding: 8px 16px;
   background-color: rgba(199,120 ,221, 0);

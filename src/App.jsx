@@ -57,7 +57,7 @@ const Dummy_data = {
       {id: 3, name: "Font Awesome"},
       {id: 4, name: "VSCode"},
     ],
-    other: [
+    others: [
       {id: 1, name: "HTML"},
       {id: 2, name: "CSS"},
       {id: 3, name: "Rest API"},
@@ -69,8 +69,9 @@ const Dummy_data = {
 
 function App() {
   return (
-    <div className='container'>
+    <div>
       <Body data={Dummy_data} />
+      
     </div>
   )
 }
