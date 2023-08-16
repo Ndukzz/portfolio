@@ -1,4 +1,11 @@
 import classes from "./Footer.module.css"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(fas);
 
 const Footer = () => {
   return (
@@ -6,16 +13,22 @@ const Footer = () => {
       <div>
         <div className={classes.flex}>
           <div>NDUKZ</div>
-          <div>ebukaemannuel@gmail.com</div>
+          <div>ndukz.codez@gmail.com</div>
         </div>
         <p>Web Designer and Frontend Developer</p>
       </div>
       <div className={classes.media}>
         <p>Media</p>
         <ul>
-          <li>Git</li>
-          <li>Fig</li>
-          <li>Twi</li>
+          <li>
+            <FontAwesomeIcon icon={['fab', 'github']} size="2x" />          
+          </li>
+          <li>      
+            <FontAwesomeIcon icon={['fab', 'discord']} size="2x" />
+          </li>
+          <li>      
+            <FontAwesomeIcon icon={['fab', 'linkedin']}  size="2x"/>
+            </li>
         </ul>
       </div>
     </div>

@@ -1,6 +1,12 @@
 import React from 'react'
 import classes from "./ContactMe.module.css" 
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(fas);
+
 const ContactMe = () => {
   const arrow = "~~>"
 
@@ -17,8 +23,14 @@ const ContactMe = () => {
         </p>
         <div className={classes.box}>
           <p className={classes.message}>Message me here</p>
-          <p className={classes.contacts}>ebukaemannuel@gmail.com</p>
-          <p className={classes.contacts}>linkedin</p>
+          <p className={classes.contacts}>
+            <FontAwesomeIcon icon={['fas', 'envelope']} size="2x" />          
+            ndukz.codez@gmail.com
+          </p>
+          <p className={classes.contacts}>
+            <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />          
+            linkedin
+          </p>
         </div>
       </section>
     </div>
