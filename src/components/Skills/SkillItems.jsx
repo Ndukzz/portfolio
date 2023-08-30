@@ -2,10 +2,6 @@ import React from 'react'
 import classes from "./SkillItems.module.css"
 
 const SkillItems = (props) => {
-
-  const values = Object.values(props.data)
-  console.log(values);
-
   return (
     <div className={classes.skillContainer}>
       <div className={classes.skillIcons}>

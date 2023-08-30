@@ -1,5 +1,9 @@
+import { useEffect, useCallback, useStatesd } from 'react'
 import './App.css'
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Body from './components/Body'
+
+import axios from 'axios'
 
 const Dummy_data = {
   projects: [
@@ -55,7 +59,7 @@ const Dummy_data = {
       {id: 1, name: "VSCode"},
       {id: 2, name: "Github"},
       {id: 3, name: "Font Awesome"},
-      {id: 4, name: "VSCode"},
+      {id: 4, name: "Netlify"},
     ],
     others: [
       {id: 1, name: "HTML"},
@@ -67,12 +71,35 @@ const Dummy_data = {
   }
 }
 
+
+
+import Homepage from './pages/Homepage'
+import PortfolioProvider from './store/PortfolioProvider'
+
 function App() {
-  return (
-    <div>
-      <Body data={Dummy_data} />
-      
-    </div>
+
+  const componentRouter = createRoutesFromElements(
+    <Route path="/" element={<Body />}>
+      <Route path="/" element={<Homepage data={Dummy_data}/>}  />
+    </Route>
+  )
+  
+  const router = createBrowserRouter (componentRouter)
+
+  // const router = createBrowserRouter([
+  //   {path: "/", element: <Body />, children: [
+  //     {path: "/", element: <Homepage data={Dummy_data}/>},
+  //     // {path: "/projects", elrement: <Projects />},
+  //     // {path: "/about-me", element: <About />},
+  //     // {path: "/contacts", element: <Contacts />}
+  //   ]}
+  // ])
+
+  return ( 
+      <RouterProvider router={router} />
+    // <div>
+    //   <Body data={Dummy_data} />
+    // </div>
   )
 }
 

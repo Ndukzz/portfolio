@@ -4,18 +4,14 @@ import PortContext from "./portfolio-ctx";
 
 const defaultPortState = {
   projects: [],
-  skills: [],
-  aboutMe: [],
-  contactMe: [],
+  skills: {},
 };
 
 const portReducer = (state, action) => {
-  if (action.type === "LOAD") {
+  if (action.type === "ADD_SKILLS") {
     state = {
       projects: [...state.projects, action.items.projects],
-      skills: [...state.skills, action.items.skills],
-      aboutMe: [...state.aboutMe, action.items.aboutMe],
-      contactMe: [...state.contactMe, action.items.contactMe],
+      skills: {...state.skills, ...action.items.skills},
     };
   }
   return state;
@@ -23,8 +19,6 @@ const portReducer = (state, action) => {
   //  return {
   //   projects: loadedInfo.projects,
   //   skills: loadadInfo.skills,
-  //   aboutMe: loadedInfo.aboutMe,
-  //   contactMe: loadedInfo.contactMe
   //  }
 };
 
@@ -34,16 +28,15 @@ const PortfolioProvider = (props) => {
     defaultPortState
   );
 
-  const loadItemsToList = (items) => {
-    dispatchPortState({ type: "LOAD", items: items});
-  }
+  const loadItems = (items) => {
+    console.log("From the context!!: ",items);
+    dispatchPortState({ type: "ADD_SKILLS", items: items });
+  };
 
   const portContext = {
     projects: portState.projects,
     skills: portState.skills,
-    aboutMe: portState.aboutMe,
-    contactMe: portState.contactMe,
-    loadItems: loadItemsToList
+    loadItems,
   };
 
   return (

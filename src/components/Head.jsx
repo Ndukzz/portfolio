@@ -1,10 +1,8 @@
-import Nav from "./Nav"
 import classes from "./Head.module.css" 
 
 const Head = () => {
   return (
     <div>
-      <Nav />
    
       <div className={classes.intro}>
         <div className={classes.text}>
