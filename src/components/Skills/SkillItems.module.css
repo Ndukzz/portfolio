@@ -38,6 +38,44 @@
   padding: 8px
 }
 
-/* .foldable {
+.foldable {
 
-} */
+}
+
+/* RESPONSIVE TABLET SCREENS */
+@media screen and (max-width: 1200px) {
+
+}
+/* RESPONSIVE PHONE SCREENS */
+@media screen and (max-width: 900px) {
+  .foldable {
+
+  }
+  .skillModules {
+    display: flex;
+    flex-direction: column;
+  }
+  .skillModule {
+    display: flexbox;
+    border: 1px solid #ABB2BF;
+    width: 50vw;
+    margin: 20px;
+    line-height: normal;
+  }
+  
+  .skillModule > h4 {
+    border-bottom: 1px solid #ABB2BF;
+    padding: 8px;
+    color: var(--white, #FFF);  
+    font-family: Fira Code;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  
+  .skillModule > div {
+    width: inherit;
+    word-wrap: break-word;
+    padding: 8px
+  }
+}

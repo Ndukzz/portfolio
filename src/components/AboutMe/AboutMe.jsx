@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutMeItems from './AboutMeItems'
+import { Link } from 'react-router-dom'
 
 const AboutMe = (props) => {
   const arrow = "~~>"
@@ -9,9 +10,9 @@ const AboutMe = (props) => {
       <div className="titleNav">
         <h1 className="titles"><span>#</span>about-me</h1>
         <div className="line"></div>
-        <a href="">View all {arrow}</a>
       </div>
       <AboutMeItems />
+      <button className='purpleButton'>Read More {arrow}</button>
 
     </div>
   )

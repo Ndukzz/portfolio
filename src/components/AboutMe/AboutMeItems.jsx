@@ -22,9 +22,8 @@ const AboutMeItems = () => {
           Now based in the US, I have embraced the spirit of American innovation
           and entrepreneurship. With a deep love for crafting elegant,
           user-centric websites and web applications, I'm on a mission to bring
-          and functionality to every project I touch.
+          functionality to every project I touch.
         </p>
-        <button className='purpleButton'>Read More {arrow}</button>
       </div>
       <img src="../../../../images/hacker.png" alt="" />
     </section>

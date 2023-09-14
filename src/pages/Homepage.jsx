@@ -1,57 +1,31 @@
-import React, { useEffect, useCallback , useState } from "react";
+import React, { useContext } from "react";
 import axios from "axios";
+import PortContext from "../store/portfolio-ctx"
 
 import Head from "../components/Head";
 import Projects from "../components/Projects/Projects";
 import Skills from "../components/Skills/Skills";
+import AboutMe from "../components/AboutMe/AboutMe";
+import ContactMe from "../components/Contacts/ContactMe";
 
-const Homepage = (props) => {
+const Homepage = () => {
+  const portCtx = useContext(PortContext)
+  let content
 
-  // const [projectsData, setProjectData] = useState(null);
-  // let loadedProjects = [];
-  // let loadedSkills = [];
-
-  // const displayData = () => {
-  //   console.log(projectsData);
-  // };
-
-  // const fetchData = useCallback(async () => {
-  //   const response = await axios.get(
-  //     "https://portfolio-cc474-default-rtdb.firebaseio.com/projects.json"
-  //   );
-
-  //   try {
-  //     if (response.status !== 200) {
-  //       throw new Error("Something went wrong");
-  //     }
-  //     const data = response.data;
-  //     console.log(data);
-  //     // OFFLOADING THE DATA FROM THE DATABASE
-  //     for (const key in data) {
-  //       loadedProjects.push({
-  //         id: key,
-  //         title: data[key].title,
-  //         description: data[key].description,
-  //         live_url: data[key].live_url,
-  //         image: data[key].image,
-  //       });
-  //     }
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  //   setProjectData(loadedProjects);
-  // }, []);
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
-
+  if (portCtx.projects[0] !== undefined && portCtx.skills.languages !== undefined) {
+    content = <>
+      <Projects />
+      <Skills />
+      <AboutMe />
+      <ContactMe />
+    </>
+  }
+  
   return (
     <div className="container">
       <Head />
       {/* <Quote /> // make the quote whebn you have spare time*/}
-      <Projects data={props.data.projects} />
-      <Skills data={props.data.skills} />
+      {content}
     </div>
   );
 };

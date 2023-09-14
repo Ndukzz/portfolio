@@ -17,14 +17,10 @@
   width: 100%
 }
 
-.container {
-  padding: 0px 171px;
-}
-
 .titles {
   color: var(--white, #FFF);
   font-family: Fira Code;
-  font-size: 32px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -34,20 +30,26 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: 30px 0px
 }
 
-.titleNav a {
+.linkNav {
+  display: flex;
+  align-items: center;
+}
+
+.linkNav a {
+  width: 100px;
   text-decoration: none;
   color: white
 }
 
 .line {
   height: 1px;
-  width: 40%; 
+  width: 20%; 
   background-color: #C778DD;
-  padding: 0px 100px 0px 40px
+  padding: 0px 100px 0px 40px;
+  margin: 0px 20px
 }
 
 span {
@@ -74,7 +76,27 @@ h1 {
   transition: background-color 0.3s ease-in-out;
 }
 
+.purpleButton > a {
+  text-decoration: none;
+  color: white
+}
+
 .purpleButton:hover{
   background-color: rgba(199,120 ,221, 0.5);
 }
 /* Create a button for the site */
+
+
+/* RESPONSIVE TABLET SCREENS */
+@media screen and (max-width: 1200px) {
+
+}
+/* RESPONSIVE PHONE SCREENS */
+@media screen and (max-width: 900px) {
+ .titles {
+  font-size: 1.3rem;
+ }
+ .line {
+  width: 10px
+ }
+}

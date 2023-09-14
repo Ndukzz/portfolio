@@ -1,34 +1,85 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
+import { useParams } from 'react-router-dom'
+
+import PortContext from "../../store/portfolio-ctx"
 import classes from "./ProjectItems.module.css"
 
 const ProjectItems = (props) => {
 
+  let content
   const liveSymbol = "<~~>"
+  const portCtx = useContext(PortContext)
+  const id = useParams()
+  console.log(portCtx.projects);
 
-  return (
-    <div className={classes.projectItems}>
-      {props.data.slice(0,3).map(
-        (project) => {
-          return <div key={project.id} className={classes.projectItem}>
-            <img className={classes.projectImg} src="https://www.dice.com/binaries/medium/content/gallery/dice/insights/2015/03/shutterstock_230705539.jpg" alt="Some random photo" />
-            <div className={classes.tools}>
-              {project.tools.map(tool => {
-                return (tool + " ")
-              })}
-            </div>
-            <section className={classes.descriptionBox}>
-              <p className={classes.projectTitle}>{project.title}</p>
-              <p>{project.description}</p>
-              <div>
-                <button className='purpleButton'>Live {liveSymbol}</button>
+  if(props.id == "miniPage"){
+    content = (
+      <>
+      <div className={classes.projectItems}>
+        {portCtx.projects[0].slice(0,3).map(
+          (project) => {
+            return (
+              <div key={project.id} className={classes.projectItem}>
+                <img className={classes.projectImg} src={project.image} alt="Some random photo" />
+                <div className={classes.tools}> 
+                  {project.tools.map(tool => {
+                    return (tool + " ")
+                  })}
+                </div>
+                <section className={classes.descriptionBox}>
+                  <p className={classes.projectTitle}>{project.title}</p>
+                  <p>{project.description}</p>
+                  <div>
+                    <button className='purpleButton'>
+                      <a target='_blank' href={project.live_url}>Live {liveSymbol}</a>
+                    </button>
+                  </div>
+                </section>
+  
               </div>
-            </section>
+        )
+          }
+        )}
+      </div>
+   </>
+    )
+  }
+  else if(props.id === "fullPage" ) {
+    content =(
+      <>
+      <div className={classes.projectItems}>
+        {portCtx.projects[0].map(
+          (project) => {
+            return (
+              <div key={project.id} className={classes.projectItem}>
+                <img className={classes.projectImg} src={project.image} alt="Some random photo" />
+                <div className={classes.tools}> 
+                  {project.tools.map(tool => {
+                    return (tool + " ")
+                  })}
+                </div>
+                <section className={classes.descriptionBox}>
+                  <p className={classes.projectTitle}>{project.title}</p>
+                  <p>{project.description}</p>
+                  <div>
+                  <button className='purpleButton'>
+                      <a target='_blank' href={project.live_url}>Live {liveSymbol}</a>
+                    </button>
+                  </div>
+                </section>
+  
+              </div>
+        )
+          }
+        )}
+      </div>
+   </>
+    )
+  }
 
-          </div>
-        }
-      )}
-    </div>
-  )
+  return <>
+    {content}
+  </>
 }
 
 export default ProjectItems

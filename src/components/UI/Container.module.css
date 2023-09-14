@@ -1,0 +1,14 @@
+.container {
+  padding: 0px 171px;
+}
+
+/* RESPONSIVE TABLET SCREENS */
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0px 100px;
+  }
+}
+/* RESPONSIVE PHONE SCREENS */
+@media screen and (max-width: 900px) {
+  
+}

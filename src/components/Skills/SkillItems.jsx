@@ -1,20 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import classes from "./SkillItems.module.css"
+import PortContext from '../../store/portfolio-ctx'
 
-const SkillItems = (props) => {
+const SkillItems = () => {
+  const portCtx = useContext(PortContext)
+
   return (
     <div className={classes.skillContainer}>
-      <div className={classes.skillIcons}>
+      {/* <div className={classes.skillIcons}> */}
         {/* THIS IS WHERE ALL THE FLOATING ICONS WILL GO */}
-      </div>
+      {/* </div> */}
 
       <div className={classes.skillModules}>   
           {/* THIS IS THE LANGUAGES SECTION  */}
-        <div className="foldable">
+        <div className={classes.foldable}>
           <section className={classes.skillModule}>
             <h4>Languages</h4>
             <div> 
-              {props.data.languages.map((language) => {
+              {portCtx.skills.languages.map((language) => {
                 return (language.name + " ")
               })}
             </div>
@@ -25,7 +28,7 @@ const SkillItems = (props) => {
           <section className={classes.skillModule}>
             <h4>Databases</h4>
             <div> 
-              {props.data.databases.map((database) => {
+              {portCtx.skills.databases.map((database) => {
                 return (database.name + " ")
               })}
             </div>
@@ -34,7 +37,7 @@ const SkillItems = (props) => {
           <section className={classes.skillModule}>
             <h4>Tools</h4>
             <div> 
-              {props.data.tools.map((tool) => {
+              {portCtx.skills.tools.map((tool) => {
                 return (tool.name + " ")
               })}
             </div>
@@ -45,7 +48,7 @@ const SkillItems = (props) => {
           <section className={classes.skillModule}>
             <h4>Frameworks</h4>
             <div> 
-              {props.data.frameworks.map((framework) => {
+              {portCtx.skills.frameworks.map((framework) => {
                 return (framework.name + " ")
               })}
             </div>
@@ -54,7 +57,7 @@ const SkillItems = (props) => {
           <section className={classes.skillModule}>
             <h4>Others</h4>
             <div> 
-              {props.data.others.map((other) => {
+              {portCtx.skills.others.map((other) => {
                 return (other.name + " ")
               })}
             </div>

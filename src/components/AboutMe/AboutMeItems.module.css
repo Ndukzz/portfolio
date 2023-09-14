@@ -1,18 +1,40 @@
 .bio {
+  width: inherit;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+.bio > img {
+  width:  500px;
+}
 .bioText {
   color: var(--gray, #ABB2BF);
   font-family: Fira Code;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
 }
 
 .bioText > p {
   margin: 30px 0px
+}
+
+/* RESPONSIVE TABLET SCREENS */
+@media screen and (max-width: 1200px) {
+  .bio > img {
+    width:  380px;
+  }
+}
+/* RESPONSIVE PHONE SCREENS */
+@media screen and (max-width: 900px) {
+  .bio {
+    display: block
+  }
+
+  .bio > img {
+    display: flex;
+    width: 300px;
+    margin: auto
+  }
 }

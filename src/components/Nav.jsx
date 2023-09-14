@@ -1,16 +1,35 @@
 import classes from './Nav.module.css'
+import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
   return (
-    <nav className={classes['nav-bar']}>
-      <h1>Ndukz</h1>
-      <ul className={classes['nav-list']}>
-        <li><span className={classes.hash}>#</span>home</li>
-        <li><span className={classes.hash}>#</span>works</li>
-        <li><span className={classes.hash}>#</span>about-me</li>
-        <li><span className={classes.hash}>#</span>contacts</li>
-      </ul>
-    </nav>
+    <header>
+      <nav className={classes['nav-bar']}>
+        <h1>Ndukz</h1>
+        <ul className={classes['nav-list']}>
+          <li><span className={classes.hash}>#</span>
+            <NavLink to="/" >
+              home
+            </NavLink>
+          </li>
+          <li><span className={classes.hash}>#</span>
+            <NavLink to="/projects/:fullPage" >
+              works
+            </NavLink>
+          </li>
+          <li><span className={classes.hash}>#</span>
+            <NavLink to="/about" >
+              about-me
+            </NavLink>
+          </li>
+          <li><span className={classes.hash}>#</span>
+            <NavLink to="/contacts" >
+              contacts
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
   )
 }
 

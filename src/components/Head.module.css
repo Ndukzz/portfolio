@@ -7,10 +7,24 @@
 
 .text {
   width: 537px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
 }
 
 .text > p {
   margin: 25px 0px
+}
+
+.text > button {
+  width: 150px;
+  align-self: auto;
+  margin: 20px 0px
+}
+.text > button > a {
+  text-decoration: none;
+  color: white;
 }
 
 .text > h2 {
@@ -34,4 +48,52 @@
   width: 457px; 
   height: 386px;
   flex-shrink: 0;
+}
+
+/* RESPONSIVE TABLET SCREENS */
+@media screen and (max-width: 1200px) {   
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px
+  }
+  
+  .text {
+    width: 400px;
+  }
+
+  .text > p {
+    margin: 25px 0px;
+    font-size: 0.9rem;
+  }
+  
+  .text > button > a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .text > h2 {
+    font-size: 28px;
+  }
+  
+  .profilePic {
+    width: 325px; 
+    height: 310px;
+    flex-shrink: 0;
+  }
+}
+
+/* RESPONSIVE PHONE SCREENS */
+@media screen and (max-width: 900px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px 0px;
+    text-align: center;
+  }
+
+  .text > button {
+    width: 100%
+  }
 }

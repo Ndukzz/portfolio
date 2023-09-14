@@ -2,17 +2,31 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  overflow: hidden
 }
 
 .projectItem {
+  width: 330px;
   border: 1px solid #ABB2BF;
-  margin: 20px 0px;
+  margin: 20px 15px;
+  overflow: hidden;
+  transition:  0.3s ease-in-out;
+}
+
+.projectItem:hover {
+  box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.2);
 }
 
 .projectImg {
   height: 201px;
   width: 330px;
   border-bottom: 1px solid #ABB2BF;
+  transition: transform 0.3s; 
+  object-fit: cover;
+}
+
+.projectImg:hover {
+  transform: scale(1.1); /* Zoom in by 10% when hovered */
 }
 
 .tools {
@@ -44,3 +58,27 @@
   gap: 16px;
   align-self: stretch;
 }
+
+/* RESPONSIVE TABLET SCREENS */
+@media screen and (max-width: 1200px) {
+
+}
+/* RESPONSIVE PHONE SCREENS */
+@media screen and (max-width: 900px) {
+  .projectItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .projectItem {
+    width: 90%;
+    border: 1px solid #ABB2BF;
+    margin: 20px auto;
+    overflow: hidden;
+    transition:  0.3s ease-in-out;  }
+
+    .projectImg {
+      width: 100%
+    }
+  }

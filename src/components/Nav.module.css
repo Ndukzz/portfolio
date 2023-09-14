@@ -6,9 +6,9 @@
   align-items: center;
 }
 
-/* .nav-bar > h1 {
-  
-} */
+.nav-bar > h1 {
+  font-size: 16px
+}
 
 .nav-bar > .nav-list {
   display: flex;
@@ -17,22 +17,42 @@
   list-style-type: none;
 }
 
-.nav-list > li {
+.nav-list > li > a{
+  text-decoration: none;
   color:  #ABB2BF;
   font-family: Fira Code;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  cursor: default;
+  cursor: pointer;
 }
 
-.nav-list  :hover {
-  animation-timing-function: ease-out;
-  animation-duration: 300ms;
+.nav-list a:hover,
+.nav-list a:active {
+
   color: white;
+  text-decoration: underline;
 }
 
 .nav-list > li > span {
   color: #C778DD
 } 
+
+/* RESPONSIVE TABLET SCREENS */
+@media screen and (max-width: 00px) {
+ 
+}
+/* RESPONSIVE PHONE SCREENS */
+@media screen and (max-width: 900px) {
+  .nav-list > li > a{
+    text-decoration: none;
+    color:  #ABB2BF;
+    font-family: Fira Code;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+}
