@@ -15,8 +15,7 @@ const Projects = () => {
           <div className="line"></div>
         </div>
         <Link to="/projects/:fullPage">View all </Link>
-        {arrow}
-      </div>
+        {arrow}</div>
       <ProjectItems id={id}/>
     </div>
   )

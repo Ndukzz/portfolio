@@ -7,7 +7,7 @@
 }
 
 .outro {
-  width: 505px;
+  width: inherit;
   color: var(--gray, #ABB2BF);
   font-family: Fira Code;
   font-size: 16px;

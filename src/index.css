@@ -93,10 +93,13 @@ h1 {
 }
 /* RESPONSIVE PHONE SCREENS */
 @media screen and (max-width: 900px) {
+  .linkNav a {
+    font-size: 0.8em;
+  }
  .titles {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
  }
  .line {
-  width: 10px
+  width: 2px
  }
 }

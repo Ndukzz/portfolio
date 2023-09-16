@@ -23,13 +23,13 @@ const Footer = () => {
           <p>Media</p>
           <ul>
             <li>
-              <FontAwesomeIcon icon={['fab', 'github']} size="2x" />          
+              <FontAwesomeIcon icon={['fab', 'github']}  />          
             </li>
             <li>      
-              <FontAwesomeIcon icon={['fab', 'discord']} size="2x" />
+              <FontAwesomeIcon icon={['fab', 'discord']}  />
             </li>
             <li>      
-              <FontAwesomeIcon icon={['fab', 'linkedin']}  size="2x"/>
+              <FontAwesomeIcon icon={['fab', 'linkedin']} />
               </li>
           </ul>
         </div>
