@@ -25,7 +25,7 @@ const AboutMeItems = () => {
           functionality to every project I touch.
         </p>
       </div>
-      <img src="../../../../images/hacker.png" alt="" />
+      <img src="./../../../public/images/hacker.png" alt="my image" />
     </section>
   );
 };
