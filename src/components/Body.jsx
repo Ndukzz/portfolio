@@ -21,9 +21,9 @@ const Body = (props) => {
   else if(portCtx.error) {
     content = <p>Error loading info...</p>
   }
-  else if(portCtx.projects !== undefined && !portCtx.isLoading && portCtx.error == null) {
+  else if(portCtx.skills !== undefined && !portCtx.isLoading && portCtx.error == null) {
 
-    if(portCtx.projects[0] !== undefined) {
+    if(portCtx.projects[0] !== undefined || portCtx.skills !== undefined) {
       content = (<>
       <Container>
         <button onClick={()=>{console.log(portCtx);}}>DATA CHECK</button>

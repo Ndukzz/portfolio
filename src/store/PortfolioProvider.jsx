@@ -12,7 +12,7 @@ const defaultPortState = {
 
 const portReducer = (state, action) => {
   if (action.type === "ADD_SKILLS") {
-    const projects =  [action.items.projects];
+    const projects = [action.items.projects];
     const skills = action.items.skills;
     
     return {
@@ -127,7 +127,7 @@ const PortfolioProvider = (props) => {
       setIsLoading(false)
     }, [])
 
-    const transformer = useCallback(async( ) => {
+    const transformer = useCallback(async() => {
       await transformData(loadedSkills, "SKILLS")
       await transformData(loadedProjects, "PROJECTS")
       loadItems({
