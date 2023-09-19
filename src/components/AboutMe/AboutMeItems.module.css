@@ -10,7 +10,6 @@
 .bioText {
   color: var(--gray, #ABB2BF);
   font-family: Fira Code;
-  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
@@ -29,7 +28,8 @@
 /* RESPONSIVE PHONE SCREENS */
 @media screen and (max-width: 900px) {
   .bio {
-    display: block
+    display: block;
+    font-size: 12px;
   }
 
   .bio > img {

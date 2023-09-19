@@ -51,6 +51,11 @@
   .foldable {
 
   }
+  .skillContainer {
+    font-size: 12px;
+
+  }
+
   .skillModules {
     display: flex;
     flex-direction: column;

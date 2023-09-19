@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 0px
+  margin: 30px 0px;
+  font-size: 16px;
   /* padding: 5px */
 }
 
 .outro {
-  width: inherit;
+  width: 505px;
   color: var(--gray, #ABB2BF);
   font-family: Fira Code;
-  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -24,7 +24,6 @@
 .message {
   color: var(--white, #FFF);
   font-family: Fira Code;
-  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -35,19 +34,22 @@
   padding: 10px;
   color: var(--gray, #ABB2BF);
   font-family: Fira Code;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 /* RESPONSIVE TABLET SCREENS */
-@media screen and (max-width: 00px) {
+@media screen and (max-width: 1200px) {
  
 }
 /* RESPONSIVE PHONE SCREENS */
 @media screen and (max-width: 900px) {
   .content {
-    display: block
+    display: block;
+    font-size: 12px;
+  }
+  .outro {
+    width: inherit;
   }
 }

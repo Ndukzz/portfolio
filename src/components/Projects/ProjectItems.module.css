@@ -32,7 +32,6 @@
 .tools {
   color: var(--gray, #ABB2BF);
   font-family: Fira Code;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -69,6 +68,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 12px;
   }
 
   .projectItem {

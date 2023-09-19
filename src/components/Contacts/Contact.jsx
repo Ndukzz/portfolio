@@ -16,12 +16,12 @@ const Contact = () => {
         <div className={classes.box}>
           <p className={classes.message}>Message me here</p>
             <p className={classes.contacts}>
-              <FontAwesomeIcon icon={['fas', 'envelope']} size="2x" />          
+              <FontAwesomeIcon icon={['fas', 'envelope']} />           
               ndukz.codez@gmail.com
             </p>
           <a href='https://www.linkedin.com/in/chukwuebuka-ndukwe-6a962721a/' target="_blank" rel="noopener noreferrer">
             <p className={classes.contacts}>
-              <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />          
+              <FontAwesomeIcon icon={['fab', 'linkedin']} />          
               linkedin
             </p>
           </a>

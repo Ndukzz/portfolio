@@ -10,5 +10,7 @@
 }
 /* RESPONSIVE PHONE SCREENS */
 @media screen and (max-width: 900px) {
-  
+  .container {
+    padding: 0px 50px
+  }
 }

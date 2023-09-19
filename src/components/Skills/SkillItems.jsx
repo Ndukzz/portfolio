@@ -7,9 +7,9 @@ const SkillItems = () => {
 
   return (
     <div className={classes.skillContainer}>
-      {/* <div className={classes.skillIcons}> */}
-        {/* THIS IS WHERE ALL THE FLOATING ICONS WILL GO */}
-      {/* </div> */}
+      <div className={classes.skillIcons}>
+        THIS IS WHERE ALL THE FLOATING ICONS WILL GO
+      </div>
 
       <div className={classes.skillModules}>   
           {/* THIS IS THE LANGUAGES SECTION  */}
