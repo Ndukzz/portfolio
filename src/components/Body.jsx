@@ -18,7 +18,7 @@ const Body = (props) => {
   if(portCtx.isLoading) {     //  TAKE THIS LOADING CONTENT TO A HIGHER COMPONENT
     content = <p>Loading Content...</p>
   }
-  else if(portCtx.error) {
+  else if(portCtx.error) {``
     content = <p>Error loading info...</p>
   }
   else if(portCtx.skills !== undefined && !portCtx.isLoading && portCtx.error == null) {

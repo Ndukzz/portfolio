@@ -4,8 +4,9 @@ const PortContext = React.createContext({
   isLoading: false,
   error: null,
   projects: [],
-  skills: [],
-  loadItems: (items) => {}
+  skills: {},
+  loadSkills: (skills) => {},
+  loadProjects: (projects) => {}
 })
 
 export default PortContext;

@@ -4,6 +4,7 @@ import PortContext from '../../store/portfolio-ctx'
 
 const SkillItems = () => {
   const portCtx = useContext(PortContext)
+  console.log(portCtx);
 
   return (
     <div className={classes.skillContainer}>
