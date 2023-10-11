@@ -12,7 +12,9 @@ const AboutMe = (props) => {
         <div className="line"></div>
       </div>
       <AboutMeItems />
-      <button className='purpleButton'>Read More {arrow}</button>
+      <Link to="/about">
+        <button className='purpleButton'>Read More {arrow}</button>
+      </Link>
 
     </div>
   )

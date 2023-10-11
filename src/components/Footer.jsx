@@ -28,7 +28,7 @@ const Footer = () => {
             <li>      
               <FontAwesomeIcon icon={['fab', 'discord']}  />
             </li>
-            <li>      
+            <li className={classes.link}>      
               <FontAwesomeIcon icon={['fab', 'linkedin']} />
               </li>
           </ul>

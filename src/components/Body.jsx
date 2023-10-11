@@ -26,8 +26,8 @@ const Body = (props) => {
     if(portCtx.projects[0] !== undefined || portCtx.skills !== undefined) {
       content = (<>
       <Container>
-        <button onClick={()=>{console.log(portCtx);}}>DATA CHECK</button>
-        { portCtx.isLoading && <p>Loading Context!!!</p>}
+        {/* <button onClick={()=>{console.log(portCtx);}}>DATA CHECK</button>
+        { portCtx.isLoading && <p>Loading Context!!!</p>} */}
           <Nav />
         <Outlet />
         </Container>

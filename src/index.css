@@ -47,13 +47,13 @@
 .line {
   height: 1px;
   width: 20%; 
-  background-color: #C778DD;
+  background-color: #008080;
   padding: 0px 100px 0px 40px;
   margin: 0px 20px
 }
 
 span {
-  color: #C778DD;
+  color: #008080;
   text-decoration: inherit;
 }
 
@@ -70,7 +70,7 @@ h1 {
 
 .purpleButton {
   font-family: Fira Code;
-  border: 1px solid #C778DD;
+  border: 1px solid #008080;
   padding: 8px 16px;
   background-color: rgba(199,120 ,221, 0);
   transition: background-color 0.3s ease-in-out;
@@ -82,7 +82,7 @@ h1 {
 }
 
 .purpleButton:hover{
-  background-color: rgba(199,120 ,221, 0.5);
+  background-color: #008080;
 }
 /* Create a button for the site */
 

@@ -25,7 +25,7 @@ const AboutMeItems = () => {
           functionality to every project I touch.
         </p>
       </div>
-      <img src="./images/hacker.png" alt="my image" />
+      <img src="https://sparkling-crepe-b49b71.netlify.app/images/pic2.jpg" alt="my image" />
     </section>
   );
 };

@@ -5,7 +5,8 @@
   align-items: center;
 }
 .bio > img {
-  width:  500px;
+  width:  420px;
+  padding: 20px;
 }
 .bioText {
   color: var(--gray, #ABB2BF);
@@ -22,7 +23,7 @@
 /* RESPONSIVE TABLET SCREENS */
 @media screen and (max-width: 1200px) {
   .bio > img {
-    width:  380px;
+    width:  300px;
   }
 }
 /* RESPONSIVE PHONE SCREENS */
@@ -34,7 +35,7 @@
 
   .bio > img {
     display: flex;
-    width: 300px;
+    width: 250px;
     margin: auto
   }
 }

@@ -4,9 +4,37 @@
 }
 
 .skillIcons {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   width: 349px;
   height: 282px;
-  background-color: purple
+}
+
+.skillIcons > * {
+width: 50px
+}
+
+.react {
+  position: relative;
+  top: 60px;
+}
+
+.github {
+  position: relative;
+  bottom: 20px;
+  left: 40px
+}
+
+.redux {
+  position: relative;
+  top: 130px
+}
+
+.tailwindCss {
+  position: relative;
+  left: 40px;
+  top: 30px
 }
 
 .skillModules {
@@ -44,6 +72,9 @@
 
 /* RESPONSIVE TABLET SCREENS */
 @media screen and (max-width: 1200px) {
+  .skillIcons {
+    display: none;
+  }
 
 }
 /* RESPONSIVE PHONE SCREENS */
@@ -53,8 +84,8 @@
   }
   .skillContainer {
     font-size: 12px;
-
   }
+
 
   .skillModules {
     display: flex;

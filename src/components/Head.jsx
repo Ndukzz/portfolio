@@ -14,10 +14,8 @@ const Head = () => {
           </button>
         </div>
         <div className="profilePic">
-          <img className={classes.profilePic} src="https://www.rbslaw.com/wp-content/uploads/building-construction-sunset.jpg" alt="Profile Picture" />
-          <div className={classes.textBox}>
-            Currently working on portfolio
-          </div>
+          <img className={classes.profilePic} src="https://sparkling-crepe-b49b71.netlify.app/images/pic1.jpg" alt="Profile Picture" />
+      
         </div>
       </div>
   )

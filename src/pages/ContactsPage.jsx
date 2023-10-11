@@ -1,6 +1,11 @@
 import React from 'react'
 
 import Contact from '../components/Contacts/Contact'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(fas);
 
 const ContactsPage = () => {
   return (
@@ -16,7 +21,9 @@ const ContactsPage = () => {
 
       <div className="titleNav">
         <h1 className="titles"><span>#</span>all-media</h1>
-        All my media goes here!!
+      </div>
+      <div>
+
       </div>
     </>
   )

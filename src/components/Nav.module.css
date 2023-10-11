@@ -32,11 +32,11 @@
 .nav-list a:active {
 
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .nav-list > li > span {
-  color: #C778DD
+  color: #008080
 } 
 
 /* RESPONSIVE TABLET SCREENS */

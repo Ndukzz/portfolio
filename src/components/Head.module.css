@@ -36,7 +36,7 @@
   line-height: normal;
 }
 .text > h2 > span {
-  color: #C778DD;
+  color: #008080;
 }
 
 .textBox {
@@ -48,6 +48,7 @@
   width: 457px; 
   height: 386px;
   flex-shrink: 0;
+  object-fit: cover;
 }
 
 /* RESPONSIVE TABLET SCREENS */

@@ -20,7 +20,9 @@ const ProjectItems = (props) => {
           (project) => {
             return (
               <div key={project.id} className={classes.projectItem}>
-                <img className={classes.projectImg} src={project.image} alt="Some random photo" />
+                <a href={`${project.live_url}`}>
+                  <img className={classes.projectImg} src={project.image} alt="Some random photo" />
+                </a>
                 <div className={classes.tools}> 
                   {project.tools.map(tool => {
                     return (tool + " ")
@@ -52,8 +54,9 @@ const ProjectItems = (props) => {
           (project) => {
             return (
               <div key={project.id} className={classes.projectItem}>
-                <img className={classes.projectImg} src={project.image} alt="Some random photo" />
-                <div className={classes.tools}> 
+                <a href={`${project.live_url}`}>
+                  <img className={classes.projectImg} src={project.image} alt="Some random photo" />
+                </a>                <div className={classes.tools}> 
                   {project.tools.map(tool => {
                     return (tool + " ")
                   })}

@@ -21,6 +21,11 @@
   margin: 20px 0px
 }
 
+.link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .message {
   color: var(--white, #FFF);
   font-family: Fira Code;

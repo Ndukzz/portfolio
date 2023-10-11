@@ -10,12 +10,12 @@ const textBox = {
 const FunFacts = () => {
   return (
     <div className={classes.factsBox}>
-      <p style={textBox}>I watch a lot of anime.</p>
-      <p style={textBox}>I am a pro at soccer.</p>
-      <p style={textBox}>I believe that music is therapy</p>
-      <p style={textBox}>My favorite movie is The Wolf of Wall Street</p>
-      <p style={textBox}>I am still in school</p>
-      <p style={textBox}>I have 3 siblings</p>
+      <p style={textBox}>I watch a lot of <span> anime</span></p>
+      <p style={textBox}>I am a pro at <span>soccer</span></p>
+      <p style={textBox}>I believe <span>music</span> is therapy</p>
+      <p style={textBox}>My favorite movie is <span>The Wolf of Wall Street</span></p>
+      <p style={textBox}>I am still in <span>college</span></p>
+      <p style={textBox}>I have <span>3</span> siblings</p>
     </div>
   )
 }

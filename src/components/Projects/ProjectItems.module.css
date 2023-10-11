@@ -8,7 +8,7 @@
 .projectItem {
   width: 330px;
   border: 1px solid #ABB2BF;
-  margin: 20px 15px;
+  margin: 20px 10px;
   overflow: hidden;
   transition:  0.3s ease-in-out;
 }
