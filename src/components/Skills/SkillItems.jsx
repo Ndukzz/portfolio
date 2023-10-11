@@ -9,12 +9,12 @@ const SkillItems = () => {
   return (
     <div className={classes.skillContainer}>
       <div className={classes.skillIcons}>
-        <img className={classes.jsLogo} src="../../../public/images/jslogo.svg" alt="Js Logo" />
-        <img className={classes.react} src="../../../public/images/react.svg" alt="react logo" />
-        <img className={classes.tailwindCss} src="../../../public/images/tailwindCss.svg" alt="tailwind logo" />
-        <img className={classes.redux} src="../../../public/images/redux.svg" alt="redux logo" />
-        <img className={classes.python} src="../../../public/images/python.svg" alt="python logo" />
-        <img className={classes.github} src="../../../public/images/github.svg" alt="github logo" />
+        <img className={classes.jsLogo} src="/images/jslogo.svg" alt="Js Logo" />
+        <img className={classes.react} src="/images/react.svg" alt="react logo" />
+        <img className={classes.tailwindCss} src="/images/tailwindCss.svg" alt="tailwind logo" />
+        <img className={classes.redux} src="/images/redux.svg" alt="redux logo" />
+        <img className={classes.python} src="/images/python.svg" alt="python logo" />
+        <img className={classes.github} src="/images/github.svg" alt="github logo" />
       </div>
 
       <div className={classes.skillModules}>   
