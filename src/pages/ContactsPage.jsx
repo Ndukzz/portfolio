@@ -13,10 +13,6 @@ const ContactsPage = () => {
       <div className="titleNav">
         <h1 className="titles"><span>/</span>contacts</h1>
       </div>
-      <p>Who am I?</p>
-
-      {/* THE SKILLS SECTION */}
-
       <Contact />
 
       <div className="titleNav">
