@@ -8,41 +8,13 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .nav-bar > h1 {
   font-size: 16px
 }
 
-.nav-list {
-  display: flex;
-  align-items: flex-start;
-  gap: 32px;
-  list-style-type: none;
-}
-
-.nav-list > li > a{
-  text-decoration: none;
-  color:  #ABB2BF;
-  font-family: FiraCode;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  cursor: pointer;
-}
-
-.nav-list a:hover,
-.nav-list a:active {
-
-  color: white;
-  text-decoration: none;
-}
-
-.nav-list > li > span {
-  color: #008080
-} 
 
 .menu {
   display: none
@@ -54,11 +26,7 @@ header {
 }
 /* RESPONSIVE PHONE SCREENS */
 @media screen and (max-width: 900px) {
-  .nav-bar {
-    display: block;
-  }
-
-  .nav-list {
+  /* .nav-list {
     display: block;
   }
 
@@ -75,7 +43,7 @@ header {
     font-weight: 400;
     line-height: normal;
     cursor: pointer;
-  }
+  } */
 
   .menu {
     display: flex;

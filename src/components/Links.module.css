@@ -1,0 +1,86 @@
+.desktop-nav-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  list-style-type: none;
+}
+
+.mobile-nav-list {
+  display: none;
+  align-items: flex-start;
+  gap: 32px;
+  list-style-type: none;
+}
+
+.invisible {
+  display: none
+}
+
+.mobile-nav-list > li > a{
+  text-decoration: none;
+  color:  #ABB2BF;
+  font-family: FiraCode;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.desktop-nav-list > li > a{
+  text-decoration: none;
+  color:  #ABB2BF;
+  font-family: FiraCode;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.mobile-nav-list a:hover,
+.mobile-nav-list a:active {
+
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-nav-list > li > span {
+  color: #008080
+} 
+
+@media screen and (max-width: 900px) {
+  .mobile-nav-list {
+    display: block;
+  }
+
+  .mobile-nav-list > li {
+    padding: 10px 0px
+  }
+
+  .mobile-nav-list > li > a{
+    text-decoration: none;
+    color:  #ABB2BF;
+    font-family: FiraCode;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+
+  .desktop-nav-list {
+    display: none;
+  }
+
+  .desktop-nav-list > li > a{
+    text-decoration: none;
+    color:  #ABB2BF;
+    font-family: FiraCode;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+}
