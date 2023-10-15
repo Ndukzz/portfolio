@@ -1,8 +1,8 @@
 /* Importing the firacode font globally */
 @font-face {
   font-family: 'FiraCode';
-  src: url('./src/fonts/FiraCode-Regular.ttf') format('truetype'),
-       url('./src/fonts/Firacode.ttf') format('truetype');
+  src: url('./fonts/FiraCode-Regular.ttf') format('ttf'),
+       url('./fonts/Firacode.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
