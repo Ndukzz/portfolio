@@ -1,14 +1,14 @@
 /* Importing the firacode font globally */
 @font-face {
   font-family: 'FiraCode';
-  src: url('./fonts/FiraCode-Regular.ttf') format('ttf'),
-       url('./fonts/Firacode.ttf') format('ttf');
+  src: url('.public/fonts/FiraCode-Regular.ttf') format('truetype'),
+       url('./fonts/Firacode.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 /* Apply the font globally to the body element or any other element */
-body {
+html {
   font-family: 'FiraCode', sans-serif;
 }
 

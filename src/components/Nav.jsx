@@ -15,7 +15,7 @@ const Nav = () => {
     <header>
       <nav className={classes['nav-bar']}>
         <h1>Ndukz</h1>
-        { visibleMenu && <ul className={classes['nav-list']} onClick={()=>{setVisibleMenu(false)}}>
+        { !visibleMenu && <ul className={ !visibleMenu ? classes['nav-list'] : ""} onClick={()=>{setVisibleMenu(false)}}>
           <li><span className={classes.hash}>#</span>
             <NavLink to="/" >
               home
