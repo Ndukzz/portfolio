@@ -7,7 +7,7 @@ import classes from "./ProjectItems.module.css"
 const ProjectItems = (props) => {
 
   let content
-  const liveSymbol = "<~~>"
+  const liveSymbol = "~~>"
   const portCtx = useContext(PortContext)
   const id = useParams()
   console.log(portCtx.projects);

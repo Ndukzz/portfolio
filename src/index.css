@@ -8,7 +8,7 @@
 }
 
 /* Apply the font globally to the body element or any other element */
-html {
+* {
   font-family: 'FiraCode', sans-serif;
 }
 
