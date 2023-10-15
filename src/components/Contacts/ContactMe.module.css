@@ -10,7 +10,7 @@
 .outro {
   width: 505px;
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: FiraCode;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -28,7 +28,7 @@
 
 .message {
   color: var(--white, #FFF);
-  font-family: Fira Code;
+  font-family: FiraCode;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -38,7 +38,7 @@
 .contacts {
   padding: 10px;
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: FiraCode;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

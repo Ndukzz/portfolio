@@ -10,7 +10,7 @@
 }
 .bioText {
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: FiraCode;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
