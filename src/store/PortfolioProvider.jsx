@@ -13,7 +13,7 @@ const defaultPortState = {
 const portReducer = (state, action) => {
   //  ADDING SKILLS TO THE CONTEXT
   if (action.type === "ADD_SKILLS") {
-    const skills = {...action.skills};
+    const skills = { ...action.skills };
 
     return {
       ...state,
@@ -70,7 +70,7 @@ const PortfolioProvider = (props) => {
     isLoading: isLoading,
     error: portState.error,
     loadSkills,
-    loadProjects
+    loadProjects,
   };
 
   // <-------------------------------------------------------------------------------->
@@ -123,6 +123,7 @@ const PortfolioProvider = (props) => {
       );
       const projectsData = await projectsResponse.data;
       setLoadedProjects(projectsData);
+      console.log(projectsResponse.status);
 
       const skillsResponse = await axios.get(
         "https://portfolio-cc474-default-rtdb.firebaseio.com/skills.json"
