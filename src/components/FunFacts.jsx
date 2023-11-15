@@ -10,7 +10,7 @@ const textBox = {
 const FunFacts = () => {
   return (
     <div className={classes.factsBox}>
-      <p style={textBox}>I watch a lot of <span> anime</span></p>
+      <p style={textBox}>I enjoy watching <span> anime</span></p>
       <p style={textBox}>I am a pro at <span>soccer</span></p>
       <p style={textBox}>I believe <span>music</span> is therapy</p>
       <p style={textBox}>My favorite movie is <span>The Wolf of Wall Street</span></p>
