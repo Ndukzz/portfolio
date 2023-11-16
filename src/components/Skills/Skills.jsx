@@ -1,7 +1,7 @@
 import React from 'react'
 import SkillItems from "./SkillItems"
 
-const Skills = () => {
+const Skills = (props) => {
 
   return (
     <div className="section">
@@ -9,7 +9,7 @@ const Skills = () => {
         <h1 className="titles"><span>#</span>skills</h1>
         <div className="line"></div>
       </div> 
-      <SkillItems />
+      <SkillItems skills={props.skills} />
     </div>
   )
 }

@@ -90,6 +90,8 @@ const PortfolioProvider = (props) => {
         });
       }
       loadProjects(data);
+      console.log("transformedProjects : ", data );
+
     }
     if (id === "SKILLS") {
       let data = {
@@ -110,6 +112,7 @@ const PortfolioProvider = (props) => {
         }
       }
       loadSkills(data);
+      console.log("transformedSkills: ", data );
     }
   };
 

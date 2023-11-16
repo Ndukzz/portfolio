@@ -2,7 +2,7 @@ import ProjectItems from "./ProjectItems"
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
 
-const Projects = () => {
+const Projects = (props) => {
 
   const arrow = "~~>"
   const id = "miniPage";
@@ -16,7 +16,7 @@ const Projects = () => {
         </div>
         <Link to="/projects/:fullPage">View all </Link>
         {arrow}</div>
-      <ProjectItems id={id}/>
+      <ProjectItems id={id} projects={props.projects} />
     </div>
   )
 }

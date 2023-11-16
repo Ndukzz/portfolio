@@ -9,14 +9,14 @@ const ProjectItems = (props) => {
   let content
   const liveSymbol = "~~>"
   const portCtx = useContext(PortContext)
-  const id = useParams()
-  console.log(portCtx.projects);
+  console.log(portCtx.projects[0]);
+  console.log(props.projects);
 
   if(props.id == "miniPage"){
     content = (
       <>
       <div className={classes.projectItems}>
-        {portCtx.projects[0].slice(0,3).map(
+        {props.projects.slice(0,3).map(
           (project) => {
             return (
               <div key={project.id} className={classes.projectItem}>
@@ -50,7 +50,7 @@ const ProjectItems = (props) => {
     content =(
       <>
       <div className={classes.projectItems}>
-        {portCtx.projects[0].map(
+        {props.projects.map(
           (project) => {
             return (
               <div key={project.id} className={classes.projectItem}>

@@ -1,5 +1,5 @@
 import classes from "./Head.module.css" 
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom" 
 
 const Head = () => {
   return (   
