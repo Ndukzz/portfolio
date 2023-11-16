@@ -16,7 +16,7 @@ import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   const componentRouter = createRoutesFromElements(
-    <Route path="/" element={<Body />} id="data-loader" loader={loader} >
+    <Route path="/" element={<Body />} id="data-loader" loader={loader}  errorElement={<ErrorPage />} >     //  Error element rendered
       <Route path="/" element={<Homepage />} />
       <Route
         path="/projects/:miniPage"
@@ -30,7 +30,6 @@ function App() {
       />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contacts" element={<ContactsPage />} />
-      <Route path="*" element={<ErrorPage />} />
     </Route>
   );
 
