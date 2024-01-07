@@ -49,7 +49,9 @@ const SkillItems = (props) => {
             <h4>Languages</h4>
             <div>
               {portCtx.skills.languages.map((language) => {
-                return language.name + " ";
+                if(language !==  "MUIIcon" ) {
+                  return language.name + " ";
+                }
               })}
             </div>
           </section>
@@ -60,7 +62,9 @@ const SkillItems = (props) => {
             <h4>Databases</h4>
             <div>
               {portCtx.skills.databases.map((database) => {
-                return database.name + " ";
+                if(database !==  "MUIIcon" ) {
+                  return database.name + " ";
+                }
               })}
             </div>
           </section>
@@ -69,7 +73,9 @@ const SkillItems = (props) => {
             <h4>Tools</h4>
             <div>
               {portCtx.skills.tools.map((tool) => {
-                return tool.name + " ";
+                if(tool !==  "MUIIcon" ) {
+                  return tool.name + " ";
+                }
               })}
             </div>
           </section>
@@ -80,7 +86,9 @@ const SkillItems = (props) => {
             <h4>Frameworks</h4>
             <div>
               {portCtx.skills.frameworks.map((framework) => {
-                return framework.name + " ";
+                if(framework !==  "MUIIcon" ) {
+                  return framework.name + " ";
+                }
               })}
             </div>
           </section>
@@ -89,7 +97,9 @@ const SkillItems = (props) => {
             <h4>Others</h4>
             <div>
               {portCtx.skills.others.map((other) => {
-                return other.name + " ";
+                if(other !==  "MUIIcon" ) {
+                  return other.name + " ";
+                }
               })}
             </div>
           </section>
