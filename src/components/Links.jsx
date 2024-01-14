@@ -31,7 +31,7 @@ const Links = (props) => {
               className={({ isActive }) =>
               isActive ? classes.active : undefined
             }
-              to="/projects/:fullPage"
+              to="/projects"
             >
             <span className={classes.hash}>#</span>
               works

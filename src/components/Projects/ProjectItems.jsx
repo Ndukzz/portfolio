@@ -1,88 +1,92 @@
-import React, { useState, useContext } from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useState, useContext } from "react";
+import { useLoaderData } from "react-router-dom";
 
-import PortContext from "../../store/portfolio-ctx"
-import classes from "./ProjectItems.module.css"
+import PortContext from "../../store/portfolio-ctx";
+import classes from "./ProjectItems.module.css";
+import { loader } from "../../pages/ProjectsPage";
 
 const ProjectItems = (props) => {
 
-  let content
-  const liveSymbol = "~~>"
-  const portCtx = useContext(PortContext)
-  console.log(portCtx.projects[0]);
-  console.log(props.projects);
+  let content;
+  const liveSymbol = "~~>";
+  const projects = useLoaderData();
+  console.log(projects);
 
-  if(props.id == "miniPage"){
+  if (props.size === "fullPage") {
     content = (
       <>
-      <div className={classes.projectItems}>
-        {props.projects.slice(0,3).map(
-          (project) => {
+        <div className={classes.projectItems}>
+          {projects.map((project) => {
             return (
               <div key={project.id} className={classes.projectItem}>
-                <a href={`${project.live_url}`}>
-                  <img className={classes.projectImg} src={project.image} alt="Some random photo" />
-                </a>
-                <div className={classes.tools}> 
-                  {project.tools.map(tool => {
-                    return (tool + " ")
+                <a target="_blank" href={`${project.live_url}`}>
+                  <img
+                    className={classes.projectImg}
+                    src={project.image}
+                    alt="Some random photo"
+                  />
+                </a>{" "}
+                <div className={classes.tools}>
+                  {project.tools.map((tool) => {
+                    return tool + " ";
                   })}
                 </div>
                 <section className={classes.descriptionBox}>
                   <p className={classes.projectTitle}>{project.title}</p>
                   <p>{project.description}</p>
                   <div>
-                    <button className='purpleButton'>
-                      <a target='_blank' href={project.live_url}>Live {liveSymbol}</a>
+                    <button className="purpleButton">
+                      <a target="_blank" href={project.live_url}>
+                        Live {liveSymbol}
+                      </a>
                     </button>
                   </div>
                 </section>
-  
               </div>
-        )
-          }
-        )}
-      </div>
-   </>
-    )
-  }
-  else if(props.id === "fullPage" ) {
-    content =(
+            );
+          })}
+        </div>
+      </>
+    );
+  } else if (props.size === "miniPage") {
+    content = (
       <>
-      <div className={classes.projectItems}>
-        {props.projects.map(
-          (project) => {
+        <div className={classes.projectItems}>
+          {props.projects.slice(0, 3).map((project) => {    // got the data loaded from the Homepage
             return (
               <div key={project.id} className={classes.projectItem}>
-                <a href={`${project.live_url}`}>
-                  <img className={classes.projectImg} src={project.image} alt="Some random photo" />
-                </a>                <div className={classes.tools}> 
-                  {project.tools.map(tool => {
-                    return (tool + " ")
+                <a target="_blank" href={`${project.live_url}`}>
+                  <img
+                    className={classes.projectImg}
+                    src={project.image}
+                    alt="Some random photo"
+                  />
+                </a>
+                <div className={classes.tools}>
+                  {project.tools.map((tool) => {
+                    return tool + " ";
                   })}
                 </div>
                 <section className={classes.descriptionBox}>
                   <p className={classes.projectTitle}>{project.title}</p>
                   <p>{project.description}</p>
                   <div>
-                  <button className='purpleButton'>
-                      <a target='_blank' href={project.live_url}>Live {liveSymbol}</a>
+                    <button className="purpleButton">
+                      <a target="_blank" href={project.live_url}>
+                        Live {liveSymbol}
+                      </a>
                     </button>
                   </div>
                 </section>
-  
               </div>
-        )
-          }
-        )}
-      </div>
-   </>
-    )
+            );
+          })}
+        </div>
+      </>
+    );
   }
 
-  return <>
-    {content}
-  </>
-}
+  return <>{content}</>;
+};
 
-export default ProjectItems
+export default ProjectItems;

@@ -33,8 +33,18 @@
 .media > ul > li {
   margin: 10px;
   cursor: hand;
-  font-size: 25px
+  font-size: 25px;
 }
+
+.media > ul > li a {
+  color: white;
+  text-decoration: none;
+}
+.media > ul > li a:hover{
+  opacity: 0.3;
+  transition: all ease-out 0.5s;
+}
+
 
 /* RESPONSIVE TABLET SCREENS */
 @media screen and (max-width: 1200px) {

@@ -22,9 +22,8 @@ const Homepage = () => {
   // <------------  ReactRouter loader  --------->
   const loaderData = useRouteLoaderData("data-loader");     // pulling data using loaders with id's
   const loaderProjects = loaderData.routerProjects
-  console.log(loaderProjects);
+  // console.log(loaderProjects);
   const loaderSkills = loaderData.routerSkills
-  console.log(loaderData);
 
   // if (
   //   portCtx.projects[0] !== undefined &&
@@ -66,7 +65,7 @@ export const loader = async () => {
     );
   } else {
     routerSkills = await transformData(skillsResponse.data, "SKILLS")
-    console.log("Skills: ", routerSkills);
+    // console.log("Skills: ", routerSkills);
   }
 
   const projectResponse = await axios.get(
@@ -79,7 +78,7 @@ export const loader = async () => {
     );
   } else {
     routerProjects = await transformData(projectResponse.data, "PROJECTS")
-    console.log("Projects: ", projectResponse.data);
+    // console.log("Projects: ", projectResponse.data);
   }
   return { routerSkills, routerProjects };
 };

@@ -1,10 +1,10 @@
-import classes from "./Footer.module.css"
-import Container from "../components/UI/Container"
+import classes from "./Footer.module.css";
+import Container from "../components/UI/Container";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 library.add(fas);
 
@@ -23,19 +23,25 @@ const Footer = () => {
           <p>Media</p>
           <ul>
             <li>
-              <FontAwesomeIcon icon={['fab', 'github']}  />          
+              <a href="https://github.com/Ndukzz" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={["fab", "github"]} />
+              </a>
             </li>
-            <li>      
-              <FontAwesomeIcon icon={['fab', 'discord']}  />
+            {/* <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={["fab", "discord"]} />
+              </a>
+            </li> */}
+            <li className={classes.link}>
+              <a href="https://www.linkedin.com/in/chukwuebuka-ndukwe-6a962721a/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={["fab", "linkedin"]} />
+              </a>
             </li>
-            <li className={classes.link}>      
-              <FontAwesomeIcon icon={['fab', 'linkedin']} />
-              </li>
           </ul>
         </div>
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

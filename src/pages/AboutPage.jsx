@@ -6,7 +6,7 @@ import { useRouteLoaderData } from 'react-router-dom'   // using id's to pull sp
 import Biography from '../components/AboutMe/Biography'
 
 const AboutPage = () => {
-  const { routerSkills} = useRouteLoaderData("data-loader");
+  const { routerSkills } = useRouteLoaderData("data-loader");
   console.log(routerSkills);
   return (
     <>

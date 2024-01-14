@@ -16,16 +16,19 @@ import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   const componentRouter = createRoutesFromElements(
-    <Route path="/" element={<Body />} id="data-loader" loader={loader}  errorElement={<ErrorPage />} >     //  Error element rendered
+    <Route
+      path="/"
+      element={<Body />}
+      id="data-loader"
+      loader={loader}
+      errorElement={<ErrorPage />}
+    >
+      {" "}
       <Route path="/" element={<Homepage />} />
       <Route
-        path="/projects/:miniPage"
+        path="/projects"
         element={<ProjectsPage />}
-        loader={projectsLoader}
-      />
-      <Route
-        path="/projects/:fullPage"
-        element={<ProjectsPage />}
+        id="projects_loader"
         loader={projectsLoader}
       />
       <Route path="/about" element={<AboutPage />} />

@@ -1,11 +1,14 @@
 import React, { useContext } from "react";
 import classes from "./SkillItems.module.css";
 import PortContext from "../../store/portfolio-ctx";
+import { useRouteLoaderData } from 'react-router-dom'
 
 const SkillItems = (props) => {
   const portCtx = useContext(PortContext);
   console.log(portCtx);
   console.log(props.skills);
+
+  const skillLoader = useRouteLoaderData()
 
   return (
     <div className={classes.skillContainer}>
@@ -49,7 +52,9 @@ const SkillItems = (props) => {
             <h4>Languages</h4>
             <div>
               {portCtx.skills.languages.map((language) => {
-                return language.name + " ";
+                if (language.id !== "MUIIcon") {
+                  return language.name + " ";
+                }
               })}
             </div>
           </section>
@@ -60,7 +65,9 @@ const SkillItems = (props) => {
             <h4>Databases</h4>
             <div>
               {portCtx.skills.databases.map((database) => {
-                return database.name + " ";
+                if (database.id !== "MUIIcon") {
+                  return database.name + " ";
+                }
               })}
             </div>
           </section>
@@ -69,7 +76,9 @@ const SkillItems = (props) => {
             <h4>Tools</h4>
             <div>
               {portCtx.skills.tools.map((tool) => {
-                return tool.name + " ";
+                if (tool.id !== "MUIIcon") {
+                  return tool.name + " ";
+                }
               })}
             </div>
           </section>
@@ -80,7 +89,9 @@ const SkillItems = (props) => {
             <h4>Frameworks</h4>
             <div>
               {portCtx.skills.frameworks.map((framework) => {
-                return framework.name + " ";
+                if (framework.id !== "MUIIcon") {
+                  return framework.name + " ";
+                }
               })}
             </div>
           </section>
@@ -89,7 +100,9 @@ const SkillItems = (props) => {
             <h4>Others</h4>
             <div>
               {portCtx.skills.others.map((other) => {
-                return other.name + " ";
+                if (other.id !== "MUIIcon") {
+                  return other.name + " ";
+                }
               })}
             </div>
           </section>

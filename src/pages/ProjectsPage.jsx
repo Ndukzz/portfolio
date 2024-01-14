@@ -1,15 +1,10 @@
-import React from "react";
 import { json, useParams, useLoaderData } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 import ProjectItems from "../components/Projects/ProjectItems";
 import axios from "axios";
-import { useState } from "react";
 
 const ProjectsPage = () => {
-  const loaderProjects = useLoaderData();
-  console.log("RouterProjects: ", loaderProjects);
-  const id = "fullPage";
   
   return (
     <div className="section">
@@ -19,7 +14,7 @@ const ProjectsPage = () => {
         </h1>
         <div className="line"></div>
       </div>
-      <ProjectItems id={id} projects={loaderProjects} />
+      <ProjectItems size="fullPage" />
     </div>
   );
 };
@@ -27,18 +22,24 @@ const ProjectsPage = () => {
 export default ProjectsPage;
 
 export const loader = async () => {
-  const response = await axios.get(
+  const projectResponse = await axios.get(
     "https://portfolio-cc474-default-rtdb.firebaseio.com/projects.json"
   );
-  if (response.status !== 200 || response.data === null) {
-    throw json({ message: "something went wrong " }, { status: 500 });
+  if (projectResponse.status !== 200 || projectResponse.data === null) {
+    throw json(
+      { message: "something went wrong with skills" },
+      { status: 300 }
+    );
   } else {
-      const routerProjects = await transformData(response.data, "PROJECTS")
-      return routerProjects
-    }
+    const routerProjects = await transformData(projectResponse.data, "PROJECTS");
+    return routerProjects;
+    // console.log("Projects: ", projectResponse.data);
+  }
+  console.log(routerProjects);
 };
 
  // <-------------------------------------------------------------------------------->
+
   // <-------  LOGIC TO TRANSFORM THE PULLED DATA ------->
 export const transformData = async (array, id) => {
   if (id === "PROJECTS") {

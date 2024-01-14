@@ -89,8 +89,8 @@ const PortfolioProvider = (props) => {
           tools: Object.values(array[key].tools), //  THIS TRANSFORMS THE TOOLS OBJ TO AN ARRAY
         });
       }
-      loadProjects(data);
-      console.log("transformedProjects : ", data );
+      // loadProjects(data);
+      // console.log("transformedProjects : ", data );
 
     }
     if (id === "SKILLS") {
@@ -112,7 +112,7 @@ const PortfolioProvider = (props) => {
         }
       }
       loadSkills(data);
-      console.log("transformedSkills: ", data );
+      // console.log("transformedSkills: ", data );
     }
   };
 
@@ -126,7 +126,7 @@ const PortfolioProvider = (props) => {
       );
       const projectsData = await projectsResponse.data;
       setLoadedProjects(projectsData);
-      console.log(projectsResponse.status);
+      // console.log(projectsResponse.status);
 
       const skillsResponse = await axios.get(
         "https://portfolio-cc474-default-rtdb.firebaseio.com/skills.json"

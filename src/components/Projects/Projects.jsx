@@ -1,11 +1,10 @@
 import ProjectItems from "./ProjectItems"
-import { useParams } from "react-router-dom"
+// import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
 
 const Projects = (props) => {
 
   const arrow = "~~>"
-  const id = "miniPage";
 
   return (
     <div className="section">
@@ -14,9 +13,10 @@ const Projects = (props) => {
           <h1 className="titles"><span>#</span>projects</h1>
           <div className="line"></div>
         </div>
-        <Link to="/projects/:fullPage">View all </Link>
+        <Link to="/projects">View all </Link>    
+        {/* link to the "?pageSize=fullPage" */}
         {arrow}</div>
-      <ProjectItems id={id} projects={props.projects} />
+      <ProjectItems projects={props.projects} size="miniPage" />
     </div>
   )
 }
