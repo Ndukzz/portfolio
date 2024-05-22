@@ -22,10 +22,10 @@ const AboutMeItems = () => {
             scratch and raising them into modern user friendly Web experiences.
           </p>
         </div>
-        <img
+{/*         <img
           src="https://sparkling-crepe-b49b71.netlify.app/images/pic2.jpg"
           alt="my image"
-        />
+        /> */}
       </section>
 
       
