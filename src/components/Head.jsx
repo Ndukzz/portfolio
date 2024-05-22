@@ -14,7 +14,7 @@ const Head = () => {
           </button>
         </div>
         <div className="profilePic">
-          <img className={classes.profilePic} src="https://sparkling-crepe-b49b71.netlify.app/images/pic1.jpg" alt="Profile Picture" />
+          <img className={classes.profilePic} src="https://main--sparkling-crepe-b49b71.netlify.app/images/ebukaPic.jpeg" alt="Profile Picture" />
       
         </div>
       </div>
