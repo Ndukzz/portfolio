@@ -8,13 +8,9 @@
 
 
 .contactInfo , .contactMessage{
-  width: 48%;
+  width: 70%;
   display: flex;
   flex-direction: column;
-}
-
-.contactInfo {
-  margin: 0px 20px
 }
 
 input, .contactMessage > textarea {
@@ -30,18 +26,12 @@ input, .contactMessage > textarea {
 }
 
 /* RESPONSIVE TABLET SCREENS */
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
+ 
   .emailForm input {
   width : inherit;
-}
-
-
-}
-@media screen and (max-width: 1200px) {
-  
-  .contactInfo , .contactMessage{
-    width: 100%;
   }
+  
 
 }
 /* RESPONSIVE PHONE SCREENS */
@@ -50,12 +40,10 @@ input, .contactMessage > textarea {
     flex-direction: column;
 
   }
-
-.contactInfo {
-  margin: 0px 20px
-}
-  
   .contactMessage textarea {
     height: 250px
+  }
+  .contactInfo , .contactMessage{
+    width: 100%;
   }
 }
