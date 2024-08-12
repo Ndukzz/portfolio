@@ -50,6 +50,11 @@ input, .contactMessage > textarea {
     flex-direction: column;
 
   }
+
+.contactInfo {
+  margin: 0px 20px
+}
+  
   .contactMessage textarea {
     height: 250px
   }
