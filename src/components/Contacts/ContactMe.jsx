@@ -8,7 +8,7 @@ const ContactMe = () => {
   return (
     <div className="section">
       <div className="titleNav">
-        <h1 className="titles"><span>#</span>contact-me</h1>
+        <h1 className="titles"><span>{"</>"}</span>contact-me</h1>
         <div className="line"></div>
       </div>
       <Contact />
