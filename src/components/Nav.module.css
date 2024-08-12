@@ -17,6 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   backdrop-filter: blur(1px); /* Blurring effect */
+  background-color: #101214;
   z-index: 1000;
 }
 
