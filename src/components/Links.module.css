@@ -7,6 +7,7 @@
 
 .mobile-nav-list {
   display: none;
+  margin-right: 30px;
   align-items: flex-start;
   gap: 32px;
   list-style-type: none;
