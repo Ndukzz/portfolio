@@ -16,7 +16,8 @@ header {
   padding: 15px;
   display: flex;
   justify-content: space-between;
-  backdrop-filter: blur(10px); /* Blurring effect */
+  backdrop-filter: blur(1px); /* Blurring effect */
+  background-color: #101214;
   z-index: 1000;
 }
 
@@ -31,13 +32,11 @@ header {
 }
 
 .menu {
-  display: none
+  display: none;
+  margin-right: 30px;
 }
 
-/* RESPONSIVE TABLET SCREENS */
-@media screen and (max-width: 00px) {
- 
-}
+
 /* RESPONSIVE PHONE SCREENS */
 @media screen and (max-width: 900px) {
   /* .nav-list {
