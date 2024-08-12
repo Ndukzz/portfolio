@@ -1,6 +1,7 @@
 .skillContainer {
   display: flex;
   justify-content: space-between;
+  width: inherit;
 }
 
 .skillIcons {
@@ -43,7 +44,7 @@ width: 50px
 }
 
 .skillModule {
-  border: 1px solid #ABB2BF;
+  border: 1px solid var(--accent-color);
   width: 196px;
   margin: 20px;
   line-height: normal;
@@ -51,9 +52,9 @@ width: 50px
 }
 
 .skillModule > h4 {
-  border-bottom: 1px solid #ABB2BF;
+  border-bottom: 1px solid var(--accent-color);
   padding: 8px;
-  color: var(--white, #FFF);  
+  color: var(--accent-color);  
   font-family: FiraCode;
   font-size: 16px;
   font-style: normal;
@@ -80,7 +81,7 @@ width: 50px
 /* RESPONSIVE PHONE SCREENS */
 @media screen and (max-width: 900px) {
   .foldable {
-
+    width: 100%
   }
   .skillContainer {
     font-size: 12px;
@@ -93,16 +94,14 @@ width: 50px
   }
   .skillModule {
     display: flexbox;
-    border: 1px solid #ABB2BF;
     width: 50vw;
     margin: 20px;
     line-height: normal;
   }
   
   .skillModule > h4 {
-    border-bottom: 1px solid #ABB2BF;
-    padding: 8px;
-    color: var(--white, #FFF);  
+    border-bottom: 1px solid var(--accent-color);
+    padding: 8px;  
     font-family: FiraCode;
     font-size: 16px;
     font-style: normal;

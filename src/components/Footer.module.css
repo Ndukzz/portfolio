@@ -30,7 +30,7 @@
   display: flex;
   list-style-type: none;
 }
-.media > ul > li {
+/* .media > ul > li {
   margin: 10px;
   cursor: hand;
   font-size: 25px;
@@ -43,7 +43,7 @@
 .media > ul > li a:hover{
   opacity: 0.3;
   transition: all ease-out 0.5s;
-}
+} */
 
 
 /* RESPONSIVE TABLET SCREENS */
@@ -61,5 +61,14 @@
   }
   .footer {
     font-size: small;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
+  .media > p {
+    color: var(--white, #FFF);
+    font-family: FiraCode;
+    font-size: 20px
   }
 }

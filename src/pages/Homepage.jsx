@@ -42,7 +42,7 @@ const Homepage = () => {
 
 
   return (
-    <div className="container">
+    <div className="contaier">
       <Head />
       <Quote />
       {content}

@@ -5,6 +5,7 @@ import classes from "./Links.module.css";
 
 const Links = (props) => {
   let device = props.device;
+  const code = "</>"
 
   const resetHandler = (value) => {
     props.resetMenu(value);
@@ -22,8 +23,8 @@ const Links = (props) => {
             }
               to="/"
             >
-            <span className={classes.hash}>#</span>
-              home
+            <span className={classes.hash}>{code}</span>
+              Home
             </NavLink>
           </li>
           <li>
@@ -33,8 +34,8 @@ const Links = (props) => {
             }
               to="/projects"
             >
-            <span className={classes.hash}>#</span>
-              works
+            <span className={classes.hash}>{code}</span>
+              Projects
             </NavLink>
           </li>
           <li>
@@ -44,8 +45,8 @@ const Links = (props) => {
             }
               to="/about"
             >
-            <span className={classes.hash}>#</span>
-              about-me
+            <span className={classes.hash}>{code}</span>
+              AboutMe
             </NavLink>
           </li>
           <li>
@@ -55,8 +56,8 @@ const Links = (props) => {
             }
               to="/contacts"
             >
-            <span className={classes.hash}>#</span>
-              contacts
+            <span className={classes.hash}>{code}</span>
+              Contact
             </NavLink>
           </li>
         </ul>
@@ -78,20 +79,20 @@ const Links = (props) => {
           }}
         >
           <li>
-            <span className={classes.hash}>#</span>
-            <NavLink to="/">home</NavLink>
+            <span className={classes.hash}>{code}</span>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <span className={classes.hash}>#</span>
-            <NavLink to="/projects/:fullPage">works</NavLink>
+            <span className={classes.hash}>{code}</span>
+            <NavLink to="/projects/:fullPage">Projects</NavLink>
           </li>
           <li>
-            <span className={classes.hash}>#</span>
-            <NavLink to="/about">about-me</NavLink>
+            <span className={classes.hash}>{code}</span>
+            <NavLink to="/about">AboutMe</NavLink>
           </li>
           <li>
-            <span className={classes.hash}>#</span>
-            <NavLink to="/contacts">contacts</NavLink>
+            <span className={classes.hash}>{code}</span>
+            <NavLink to="/contacts">Contact</NavLink>
           </li>
         </ul>
       </div>

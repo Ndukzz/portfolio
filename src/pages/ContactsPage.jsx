@@ -11,7 +11,7 @@ const ContactsPage = () => {
   return (
     <>
       <div className="titleNav">
-        <h1 className="titles"><span>/</span>contacts</h1>
+        <h1 className="titles"><span>/</span>contact</h1>
       </div>
       <Contact />
 

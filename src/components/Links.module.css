@@ -39,15 +39,17 @@
 }
 
 .desktop-nav-list a:hover,
-.desktop-nav-list a:active
+.desktop-nav-list a:active,
 .desktop-nav-list a.active
  {
 
-  color: white;
+  color: var(--accent-color);
+  padding-bottom: 5px;
+  text-decoration: underline;
 }
 
 .mobile-nav-list > li > span {
-  color: #008080
+  color: var(--accent-color)
 } 
 
 @media screen and (max-width: 900px) {

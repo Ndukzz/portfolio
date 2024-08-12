@@ -1,5 +1,6 @@
 import { useEffect, useCallback, useContext } from "react";
 import "./App.css";
+import "./index.css";
 import {
   createBrowserRouter,
   createRoutesFromElements,

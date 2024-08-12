@@ -29,7 +29,9 @@ time, mark, audio, video {
     vertical-align:baseline;
     background:transparent;
 }
-
+:root{
+    --accent-color: #00FFBF; /* Define your accent color here */
+}
 body {
     line-height:1;
 }
@@ -102,4 +104,67 @@ hr {
 
 input, select {
     vertical-align:middle;
+}
+
+.LiveButton {
+    padding: 8px 16px 8px 0px
+}
+
+.hoverText {
+    color: white;
+    cursor: pointer;
+    font-family: FiraCode;
+    border: 1px solid var(--accent-color);
+    padding: 8px 16px;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Optional: Smooth color transition */
+}
+
+.hoverText::after {
+    content: ">"; /* The text that appears on hover */
+    top: 0;
+    left: 0;
+    color: #00FFBF; /* Color of the new text */
+    opacity: 0; /* Initially hidden */
+    background-color: transparent;
+    transition: opacity 0.3s ease; /* Smooth transition for appearance */
+}
+.hoverText:hover::after {
+    opacity: 1; /* Show new text on hover */
+}
+.hoverText:hover {
+    color: var(--accent-color); /* Hide original text on hover */
+}
+
+/* ------------------------------------------------------------ */
+
+.projLink {
+    color: white;
+    cursor: pointer;
+    font-family: FiraCode;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Optional: Smooth color transition */
+}
+
+.projLink::after {
+    content: "~>"; /* The text that appears on hover */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    color: #00FFBF; /* Color of the new text */
+    background-color: transparent;
+    transition: opacity 0.3s ease; /* Smooth transition for appearance */
+}
+.projLink:hover::after {
+    opacity: 1; /* Show new text on hover */
+}
+.projLink:hover {
+     color: var(--accent-color) /* Hide original text on hover */
 }

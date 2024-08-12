@@ -7,20 +7,20 @@
 
 .projectItem {
   width: 330px;
-  border: 1px solid #ABB2BF;
+  border: 1px solid var(--accent-color);
   margin: 20px 10px;
   overflow: hidden;
   transition:  0.3s ease-in-out;
 }
 
 .projectItem:hover {
-  box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 255, 191, 0.7);
 }
 
 .projectImg {
   height: 201px;
   width: 330px;
-  border-bottom: 1px solid #ABB2BF;
+  border-bottom: 1px solid var(--accent-color);
   transition: transform 0.3s; 
   object-fit: cover;
 }
@@ -30,13 +30,13 @@
 }
 
 .tools {
-  color: var(--gray, #ABB2BF);
+  color: var(--gray, var(--accent-color));
   font-family: FiraCode;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding: 10px;
-  border-bottom: 1px solid #ABB2BF;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .projectTitle {
@@ -73,7 +73,7 @@
 
   .projectItem {
     width: 90%;
-    border: 1px solid #ABB2BF;
+    border: 1px solid var(--accent-color);
     margin: 20px auto;
     overflow: hidden;
     transition:  0.3s ease-in-out;  }

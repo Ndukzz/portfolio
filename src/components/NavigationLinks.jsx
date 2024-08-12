@@ -18,8 +18,7 @@ const NavigationLinks = () => {
   return (
     <div>
       <div className={classes.menu} onClick={() => {setVisibleMenu(!visibleMenu)}}>
-          {<FontAwesomeIcon icon={['fas', "hashtag"]} />}
-          Menu
+          {<FontAwesomeIcon icon={['fas', "bars"]} />}
       </div>
       <div className={classes.links}>
           <Links device="desktop" isVisible={visibleMenu} resetMenu={resetMenu} />

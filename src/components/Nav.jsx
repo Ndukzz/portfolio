@@ -1,11 +1,12 @@
 import classes from './Nav.module.css'
 import NavigationLinks from './NavigationLinks'
+import { Link } from "react-router-dom"
 
 const Nav = () => {
   return (
     <header>
       <nav className={classes['nav-bar']}>
-        <h1>Ndukz</h1>
+        <Link to="/">Ndukz</Link>
         <NavigationLinks />
       </nav>
     </header>

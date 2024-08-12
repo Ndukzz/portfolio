@@ -1,5 +1,7 @@
 .content {
   display: flex;
+  flex-direction: column;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   margin: 30px 0px;
@@ -8,7 +10,7 @@
 }
 
 .outro {
-  width: 505px;
+  width: inherit;
   color: var(--gray, #ABB2BF);
   font-family: FiraCode;
   font-style: normal;

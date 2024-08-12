@@ -3,10 +3,11 @@ import SkillItems from "./SkillItems"
 
 const Skills = (props) => {
 
+  const code = "</>"
   return (
     <div className="section">
       <div className="titleNav">
-        <h1 className="titles"><span>#</span>skills</h1>
+        <h1 className="titles"><span>{code} </span>skills</h1>
         <div className="line"></div>
       </div> 
       <SkillItems skills={props.skills} />

@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 
 const AboutMe = (props) => {
   const arrow = "~~>"
+  const code = "</>"
 
   return (
     <div className="section">
       <div className="titleNav">
-        <h1 className="titles"><span>#</span>about-me</h1>
+        <h1 className="titles"><span>{code} </span>about-me</h1>
         <div className="line"></div>
       </div>
       <AboutMeItems />

@@ -14,7 +14,7 @@ const AboutMeItems = () => {
           <p>
             I'm Chukwuebuka Ndukwe, a self taught Front-end Developer with a
             love for crafting efficient, scalable, and innovative solutions.
-            With 3 years of experience in the industry, I thrive on turning
+            I thrive on turning
             complex problems into simple, elegant, and user-friendly
             applications. I am a fusion of Nigerian Heritage and American
             Innovation. Born and raised in Nigeria, I bring a unique perspective
@@ -22,10 +22,6 @@ const AboutMeItems = () => {
             scratch and raising them into modern user friendly Web experiences.
           </p>
         </div>
-{/*         <img
-          src="https://sparkling-crepe-b49b71.netlify.app/images/pic2.jpg"
-          alt="my image"
-        /> */}
       </section>
 
       

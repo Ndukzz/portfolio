@@ -12,10 +12,10 @@ const SkillItems = (props) => {
 
   return (
     <div className={classes.skillContainer}>
-      <div className={classes.skillIcons}>
+      {/* <div className={classes.skillIcons}>
         <img
           className={classes.jsLogo}
-          src="/images/jslogo.svg"
+          src="/images/jsLogo.svg"
           alt="Js Logo"
         />
         <img
@@ -43,7 +43,7 @@ const SkillItems = (props) => {
           src="/images/github.svg"
           alt="github logo"
         />
-      </div>
+      </div> */}
 
       <div className={classes.skillModules}>
         {/* THIS IS THE LANGUAGES SECTION  */}

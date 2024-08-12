@@ -8,8 +8,8 @@ const Biography = () => {
       <p>
         My journey in software engineering began with a burning curiosity
         and an insatiable appetite for learning. Over the years, I've honed
-        my skills in [specific technologies or programming languages, e.g.,
-        JavaScript, Typescript, React, ReactNative, Redux, etc.] and have
+        my skills in specific technologies or programming languages, e.g.,
+        JavaScript, Typescript, React, ReactNative, Redux, etc. and have
         actively contributed to a variety of projects ranging from my
         personal projects to the medical field.
         <br />
@@ -27,13 +27,6 @@ const Biography = () => {
         and the ability to communicate complex ideas simply. I find joy in
         solving puzzles, writing clean and maintainable code, and embracing
         challenges head-on.
-      </p>
-      <p>
-        When I'm not coding, you'll likely find me engaging in soccer
-        competitions, in the gym or diving into the world of Anime. I am
-        excited about the endless possibilities that technology presents and
-        am always eager to take on new challenges. Let's connect and create
-        something amazing together!"
       </p>
     </div>
   </section>

@@ -35,7 +35,6 @@ export const loader = async () => {
     return routerProjects;
     // console.log("Projects: ", projectResponse.data);
   }
-  console.log(routerProjects);
 };
 
  // <-------------------------------------------------------------------------------->

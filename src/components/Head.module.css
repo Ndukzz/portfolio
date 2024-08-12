@@ -2,16 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 0px
+  height: 100vh;
 }
 
 .text {
-  width: 537px;
+  width: 50%;
   margin-right: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+  text-align: left;
 }
 
 .text > p {
@@ -30,6 +31,7 @@
 
 .text > h2 {
   color: white;
+  font-weight: bolder;
   font-family: FiraCode;
   font-size: 32px;
   font-style: normal;
@@ -37,7 +39,23 @@
   line-height: normal;
 }
 .text > h2 > span {
-  color: #008080;
+  font-size: 45px;
+  color: #00FFBF;
+}
+
+.text > h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.text > h3 > span {
+  color: #00FFBF;
+}
+
+.text > p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 20px 0;
 }
 
 .textBox {
@@ -46,17 +64,36 @@
 }
 
 .profilePic {
-  width: 457px; 
-  height: 386px;
-  flex-shrink: 0;
-  object-fit: cover;
+  width: 400px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 255, 191, 0.5);
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 35%
+}
+
+
+.buttons > div {
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin-right: 0px 10px;
+}
+
+.profilePic:hover {
+  box-shadow: 0 0 50px rgba(0, 255, 191, 0.7);
+  transition: all ease-out 0.3s;
+  transform: scale(1.01);
+};
+  
 /* RESPONSIVE TABLET SCREENS */
 @media screen and (max-width: 1200px) {   
   .intro {
     display: flex;
-    justify-content: space-between;
+    justify-content: null;
     margin: 50px 0px
   }
   
@@ -87,6 +124,9 @@
     height: 310px;
     flex-shrink: 0;
   }
+  
+  .buttons div {
+  }
 }
 
 /* RESPONSIVE PHONE SCREENS */
@@ -94,9 +134,12 @@
   .intro {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin: 50px 0px;
     text-align: center;
+  }
+
+  .profilePic {
+    width: 300px
   }
 
   .text {
@@ -108,5 +151,20 @@
   }
   .text > h2 {
   font-size: 1.5em;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 70%
+  }
+
+  .text > h2 > span {
+    font-size:40px;
+  }
+  
+  .text > h3 {
+    font-size: 20px;
+    margin: 10px 0;
   }
 }

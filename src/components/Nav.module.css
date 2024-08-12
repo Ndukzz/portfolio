@@ -1,4 +1,5 @@
 header {
+  width: inherit;
   display: flex;
   align-items: flex-start;
   padding: 32px 0px 8px 0px;
@@ -8,12 +9,25 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  position: fixed;
+  top: 0;
+  width: 90%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(10px); /* Blurring effect */
+  z-index: 1000;
 }
 
 .nav-bar > h1 {
   font-size: 16px;
   cursor: pointer;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu {
